@@ -65,3 +65,7 @@ During this lab you will:
 - When debugging, print tokens, scores, or intermediate choices.
 - Ask an AI assistant to help create edge case posts or unusual wording.
 - Try examples that mislead or confuse your model. Failure cases teach you the most.
+
+## Task Summary
+
+The main idea of this activity was showing students how even a small sentiment analyzer depends a lot on the rules and data it is built from. Students had to understand the difference between a rule-based model, which follows exact keyword logic, and a small ML model, which learns patterns from labeled examples. I think students would probably struggle most with labeling posts that feel ambiguous, mixed, sarcastic, or full of slang and emojis, because those are the cases where simple systems start breaking down. AI was helpful for brainstorming more realistic sample posts, explaining the code structure, and suggesting small improvements to the scoring logic, but it could also be misleading when it sounded too confident about why a prediction failed or suggested fixes that were bigger than the actual issue. Because of that, students really need to check AI suggestions against the dataset, the labels, and the actual outputs from the model. One way I would guide a student without giving away the answer is by asking which exact word or rule changed the score and whether that matches the label they expected. That usually helps them figure out whether the issue is coming from the vocabulary, the labels, or the scoring logic itself.
